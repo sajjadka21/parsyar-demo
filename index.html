@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#101716" />
+    <meta name="description" content="پیش‌نمایش نمایشی پارسیار؛ داشبورد مدیریت باشگاه با داده‌های ساختگی." />
+    <title>پارسیار | پیش‌نمایش محصول</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="demo-ribbon"><span class="ribbon-dot"></span> نسخهٔ نمایشی · همهٔ اطلاعات ساختگی‌اند</div>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="ناوبری اصلی">
+        <a class="brand" href="#dashboard" aria-label="پارسیار، خانه">
+          <span class="brand-mark">پ</span>
+          <span><strong>پارسیار</strong><small>مدیریت یکپارچهٔ باشگاه</small></span>
+        </a>
+
+        <div class="club-switcher">
+          <span class="club-avatar">آ</span>
+          <span class="club-copy"><strong>باشگاه آفتاب</strong><small>حساب نمایشی</small></span>
+          <span class="chevron">⌄</span>
+        </div>
+
+        <p class="nav-label">مدیریت</p>
+        <nav class="nav-list">
+          <a class="nav-item active" href="#dashboard" data-view="dashboard"><span class="nav-icon">◫</span> نمای کلی</a>
+          <a class="nav-item" href="#athletes" data-view="athletes"><span class="nav-icon">♙</span> ورزشکاران <span class="nav-count">۶۴۲</span></a>
+          <a class="nav-item" href="#visits" data-view="visits"><span class="nav-icon">◷</span> مراجعات روزانه</a>
+          <a class="nav-item" href="#finance" data-view="finance"><span class="nav-icon">↗</span> امور مالی</a>
+          <a class="nav-item" href="#expenses" data-view="expenses"><span class="nav-icon">▤</span> هزینه‌ها</a>
+        </nav>
+
+        <p class="nav-label second-label">باشگاه</p>
+        <nav class="nav-list">
+          <a class="nav-item" href="#messages" data-view="messages"><span class="nav-icon">⌁</span> پیامک‌های یادآوری</a>
+          <a class="nav-item" href="#settings" data-view="settings"><span class="nav-icon">⚙</span> تنظیمات</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+          <div class="support-card">
+            <span class="support-icon">?</span>
+            <div><strong>نیاز به راهنمایی دارید؟</strong><small>با تیم پشتیبانی در ارتباط باشید.</small></div>
+            <span class="support-arrow">←</span>
+          </div>
+          <div class="profile-row">
+            <span class="profile-avatar">س</span>
+            <span class="profile-copy"><strong>سارا محمدی</strong><small>مدیر باشگاه</small></span>
+            <button class="more-button" aria-label="گزینه‌های حساب">···</button>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main-content" id="dashboard">
+        <header class="topbar">
+          <div class="breadcrumbs"><span>باشگاه آفتاب</span><span class="crumb-separator">/</span><strong id="page-crumb">نمای کلی</strong></div>
+          <div class="top-actions">
+            <button class="icon-button search-button" aria-label="جستجو">⌕</button>
+            <button class="icon-button notification-button" aria-label="اعلان‌ها">♧<i></i></button>
+            <span class="top-divider"></span>
+            <span class="today-date">یکشنبه، ۱۳ مهر ۱۴۰۵</span>
+          </div>
+        </header>
+
+        <section class="page-wrap">
+          <div class="welcome-row">
+            <div>
+              <p class="eyebrow"><span class="live-dot"></span> فضای نمایشی پارسیار</p>
+              <h1 id="page-title">روز بخیر، سارا <span class="wave">✳</span></h1>
+              <p class="welcome-copy">وضعیت باشگاهت را یک‌جا ببین و کارهای امروز را با خیال راحت پیش ببر.</p>
+            </div>
+            <div class="welcome-actions">
+              <button class="button button-quiet" id="date-button"><span>▦</span> مهر ۱۴۰۵ <b>⌄</b></button>
+              <a class="button button-primary" href="https://parsyar.hivenest.ir" target="_blank" rel="noreferrer"><span>↗</span> مشاهدهٔ سایت اصلی</a>
+            </div>
+          </div>
+
+          <div class="notice-bar"><span class="notice-icon">i</span><span>این داشبورد فقط برای نمایش است؛ داده‌ها ساختگی‌اند و هیچ تغییری در حساب واقعی ایجاد نمی‌شود.</span><button aria-label="بستن اطلاعیه" id="dismiss-notice">×</button></div>
+
+          <section class="stats-grid" aria-label="خلاصهٔ باشگاه">
+            <article class="stat-card stat-members">
+              <div class="stat-head"><span>ورزشکاران فعال</span><span class="stat-icon">♙</span></div>
+              <div class="stat-value">۶۴۲ <small>نفر</small></div>
+              <div class="stat-foot"><span class="trend">↑ ۸٫۴٪</span><span>نسبت به ماه قبل</span><span class="mini-spark spark-green">▁▃▂▅▄▆▅█</span></div>
+            </article>
+            <article class="stat-card stat-visits">
+              <div class="stat-head"><span>مراجعهٔ امروز</span><span class="stat-icon">◷</span></div>
+              <div class="stat-value">۸۷ <small>مراجعه</small></div>
+              <div class="stat-foot"><span class="trend">↑ ۱۲٪</span><span>نسبت به هفتهٔ قبل</span><span class="mini-spark spark-blue">▁▂▄▃▆▄▇█</span></div>
+            </article>
+            <article class="stat-card stat-income">
+              <div class="stat-head"><span>درآمد این ماه</span><span class="stat-icon">↗</span></div>
+              <div class="stat-value">۱۸۴ <small>میلیون تومان</small></div>
+              <div class="stat-foot"><span class="trend">↑ ۶٫۲٪</span><span>نسبت به ماه قبل</span><span class="mini-spark spark-gold">▁▃▂▄▅▄▇█</span></div>
+            </article>
+            <article class="stat-card stat-expiring">
+              <div class="stat-head"><span>در انتظار تمدید</span><span class="stat-icon">◌</span></div>
+              <div class="stat-value">۲۸ <small>عضویت</small></div>
+              <div class="stat-foot"><span class="attention">نیاز به پیگیری</span><span>تا ۷ روز آینده</span><span class="mini-spark spark-coral">▁▂▃▃▅▆▆█</span></div>
+            </article>
+          </section>
+
+          <section class="content-grid">
+            <article class="panel revenue-panel">
+              <div class="panel-heading">
+                <div><h2>روند درآمد</h2><p>مقایسهٔ دریافتی و هزینه‌های باشگاه</p></div>
+                <button class="select-button">۶ ماه اخیر <span>⌄</span></button>
+              </div>
+              <div class="chart-summary"><strong>۱۸۴٬۲۰۰٬۰۰۰ <small>تومان</small></strong><span class="chart-change">↑ ۶٫۲٪ <small>در مقایسه با ماه قبل</small></span></div>
+              <div class="chart-area" aria-label="نمودار نمایشی درآمد و هزینه">
+                <div class="chart-y-labels"><span>۲۰۰ م</span><span>۱۵۰ م</span><span>۱۰۰ م</span><span>۵۰ م</span><span>۰</span></div>
+                <div class="chart-lines"><i></i><i></i><i></i><i></i><i></i>
+                  <div class="bars">
+                    <div class="bar-group"><span class="bar income" style="--h:48%"></span><span class="bar expense" style="--h:28%"></span></div>
+                    <div class="bar-group"><span class="bar income" style="--h:62%"></span><span class="bar expense" style="--h:35%"></span></div>
+                    <div class="bar-group"><span class="bar income" style="--h:55%"></span><span class="bar expense" style="--h:32%"></span></div>
+                    <div class="bar-group"><span class="bar income" style="--h:76%"></span><span class="bar expense" style="--h:46%"></span></div>
+                    <div class="bar-group"><span class="bar income" style="--h:68%"></span><span class="bar expense" style="--h:42%"></span></div>
+                    <div class="bar-group current"><span class="bar income" style="--h:91%"></span><span class="bar expense" style="--h:51%"></span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="chart-months"><span>اردیبهشت</span><span>خرداد</span><span>تیر</span><span>مرداد</span><span>شهریور</span><span>مهر</span></div>
+              <div class="chart-legend"><span><i class="legend-income"></i> درآمد</span><span><i class="legend-expense"></i> هزینه</span></div>
+            </article>
+
+            <article class="panel expiring-panel">
+              <div class="panel-heading">
+                <div><h2>عضویت‌های رو به پایان</h2><p>برای پیگیری سریع‌تر</p></div>
+                <button class="text-button" data-view="athletes">مشاهدهٔ همه <span>←</span></button>
+              </div>
+              <div class="member-list">
+                <div class="member-row"><span class="member-avatar avatar-lilac">ن</span><span class="member-info"><strong>نگار رضایی</strong><small>بدنسازی · صبح</small></span><span class="days-left urgent">امروز</span></div>
+                <div class="member-row"><span class="member-avatar avatar-sand">م</span><span class="member-info"><strong>مریم احمدی</strong><small>پیلاتس · عصر</small></span><span class="days-left">۲ روز</span></div>
+                <div class="member-row"><span class="member-avatar avatar-blue">ا</span><span class="member-info"><strong>الهام کریمی</strong><small>فیتنس · صبح</small></span><span class="days-left">۳ روز</span></div>
+                <div class="member-row"><span class="member-avatar avatar-green">س</span><span class="member-info"><strong>سحر موسوی</strong><small>بدنسازی · عصر</small></span><span class="days-left">۵ روز</span></div>
+              </div>
+              <button class="full-width-button" data-view="messages"><span>⌁</span> یادآوری تمدید برای اعضا</button>
+            </article>
+
+            <article class="panel visits-panel">
+              <div class="panel-heading">
+                <div><h2>مراجعات امروز</h2><p>آخرین ورودهای ثبت‌شده</p></div>
+                <button class="text-button" data-view="visits">همهٔ مراجعات <span>←</span></button>
+              </div>
+              <div class="table-wrap">
+                <table><thead><tr><th>ورزشکار</th><th>ساعت ورود</th><th>نوع عضویت</th><th>وضعیت</th></tr></thead>
+                  <tbody>
+                    <tr><td><span class="table-person"><i class="tiny-avatar avatar-lilac">ن</i><strong>نگار رضایی</strong></span></td><td>۰۸:۱۲</td><td>ماهانه</td><td><span class="status status-ok">ثبت‌شده</span></td></tr>
+                    <tr><td><span class="table-person"><i class="tiny-avatar avatar-sand">م</i><strong>مریم احمدی</strong></span></td><td>۰۸:۳۶</td><td>سه‌ماهه</td><td><span class="status status-ok">ثبت‌شده</span></td></tr>
+                    <tr><td><span class="table-person"><i class="tiny-avatar avatar-blue">ا</i><strong>الهام کریمی</strong></span></td><td>۰۹:۰۴</td><td>ماهانه</td><td><span class="status status-ok">ثبت‌شده</span></td></tr>
+                    <tr><td><span class="table-person"><i class="tiny-avatar avatar-green">س</i><strong>سحر موسوی</strong></span></td><td>۰۹:۲۷</td><td>شش‌ماهه</td><td><span class="status status-ok">ثبت‌شده</span></td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </article>
+
+            <article class="panel quick-panel">
+              <div class="panel-heading"><div><h2>دسترسی سریع</h2><p>کارهای پرکاربرد</p></div></div>
+              <div class="quick-actions">
+                <button data-view="athletes"><span class="quick-icon quick-green">＋</span><span><strong>ثبت ورزشکار</strong><small>عضو جدید باشگاه</small></span><b>←</b></button>
+                <button data-view="visits"><span class="quick-icon quick-blue">◷</span><span><strong>ثبت مراجعه</strong><small>ورود روزانه</small></span><b>←</b></button>
+                <button data-view="expenses"><span class="quick-icon quick-gold">↙</span><span><strong>ثبت هزینه</strong><small>مدیریت مخارج</small></span><b>←</b></button>
+              </div>
+            </article>
+          </section>
+
+          <footer class="page-footer"><span>پارسیار؛ زمان بیشتر برای رشد باشگاهت.</span><span>پیش‌نمایش تعاملی با دادهٔ ساختگی</span></footer>
+        </section>
+      </main>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
+
